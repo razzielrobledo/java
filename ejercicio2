@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main {
+    
+    public static void main(String[] args){
+        Coche micoche = new Coche();
+        micoche.contarPuertas();
+        System.out.println(micoche.puertas);
+    }
+
+}
+
+class Coche {
+    
+    public int puertas = 0;
+    
+    public void contarPuertas(){
+        this.puertas++;
+    }
+}
