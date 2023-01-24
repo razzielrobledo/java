@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class Main {
+    
+    public static void main(String[] args){
+        int numeroIf = 8;
+        int numeroWhile = 0;
+        var estacion  = "INVIERNO";
+        
+        if(numeroIf>0){
+            System.out.println("El valor de numeroIf es positivo");
+        } else if(numeroIf<0){
+            System.out.println("El valor de numeroIf es negativo");
+        } else{
+            System.out.println("El valor de numeroIf es igual a 0");
+        }
+        
+        while(numeroWhile<3){
+            System.out.println(numeroWhile);
+            numeroWhile = numeroWhile + 1;
+        }
+        
+        do {
+            System.out.println(numeroWhile);
+            numeroWhile = numeroWhile + 1;
+        } while(numeroWhile<4);
+        
+        for(int numeroFor=0;numeroFor<=3;numeroFor++){
+            System.out.println(numeroFor);
+        }
+        
+        switch(estacion){
+            case "PRIMAVERA":
+                System.out.println("La estacion es primavera");
+                break;
+            case "VERANO":
+                System.out.println("La estacion es verano");
+                break;
+            case "OTOÑO":
+                System.out.println("La estacion es otoño");
+                break;
+            case "INVIERNO":
+                System.out.println("La estacion es invierno");
+                break;
+            default:
+                System.out.println("No es una estacion del año");
+                break;
+        }
+    }
+}
