@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Persona edad = new Persona();
+        edad.setEdad("33 años");
+        
+        Persona nombre = new Persona();
+        edad.setNombre("Razziel");
+        
+        Persona telefono = new Persona();
+        edad.setTelefono("962-586-8789");
+        
+        System.out.println(edad.getEdad());
+        System.out.println(edad.getNombre());
+        System.out.println(edad.getTelefono());
+    }
+}
+
+class Persona {
+    private String edad, nombre, telefono;
+    
+    public void setEdad(String edad){
+        this.edad = edad;
+    }
+    
+    public String getEdad(){
+        return this.edad;
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public void setTelefono(String telefono){
+        this.telefono = telefono;
+    }
+    
+    public String getTelefono(){
+        return this.telefono;
+    }
+}
