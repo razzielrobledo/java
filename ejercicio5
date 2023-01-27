@@ -1,0 +1,85 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Cliente edad = new Cliente();
+        edad.setEdad("33 años");
+        Cliente nombre = new Cliente();
+        nombre.setNombre("Razziel");
+        Cliente telefono = new Cliente();
+        telefono.setTelefono("33 años");
+        Cliente credito = new Cliente();
+        credito.setCredito("1,500");
+        
+        Trabajador edad2 = new Trabajador();
+        edad2.setEdad("35 años");
+        Trabajador nombre2 = new Trabajador();
+        nombre2.setNombre("Ignacio");
+        Trabajador telefono2 = new Trabajador();
+        telefono2.setTelefono("30 años");
+        Trabajador salario = new Trabajador();
+        salario.setSalario("3,500");
+        
+        System.out.println(edad.getEdad());
+        System.out.println(nombre.getNombre());
+        System.out.println(telefono.getTelefono());
+        System.out.println(credito.getCredito());
+        
+        System.out.println(edad2.getEdad());
+        System.out.println(nombre2.getNombre());
+        System.out.println(telefono2.getTelefono());
+        System.out.println(salario.getSalario());
+    }
+}
+
+class Persona {
+    private String edad, nombre, telefono;
+    
+    public void setEdad(String edad){
+        this.edad = edad;
+    }
+    
+    public String getEdad(){
+        return this.edad;
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public void setTelefono(String telefono){
+        this.telefono = telefono;
+    }
+    
+    public String getTelefono(){
+        return this.telefono;
+    }
+}
+
+class Cliente extends Persona {
+    private String credito;
+    
+    public void setCredito(String credito){
+        this.credito = credito;
+    }
+    
+    public String getCredito(){
+        return this.credito;
+    }
+}
+
+class Trabajador extends Persona {
+    private String salario;
+    
+    public void setSalario(String salario){
+        this.salario = salario;
+    }
+    
+    public String getSalario(){
+        return this.salario;
+    }
+}
